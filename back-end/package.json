@@ -1,0 +1,30 @@
+{
+  "name": "standarts-health-safety-api",
+  "version": "1.0.0",
+  "description": "api for the brazilian nrs health protocols",
+  "main": "src/api/server.js",
+  "scripts": {
+    "build": " tsc",
+    "dev": "concurrently \"tsc --watch\" \"nodemon dist/api/server.js \"",
+    "start": "node dist/api/server.js"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/pg": "^8.6.1",
+    "concurrently": "^6.3.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "@types/mongodb": "^4.0.7",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongodb": "^4.2.0",
+    "nodemon": "^2.0.15"
+  },
+  "keywords": [],
+  "author": "Ruan Miguel",
+  "license": "ISC"
+}
